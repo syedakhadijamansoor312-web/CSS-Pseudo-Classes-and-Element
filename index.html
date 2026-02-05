@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Pseudo classes Elements</title>
+    <style>
+        body{
+            background-color: lavender;
+        }
+        .heading{
+            background-color:mediumpurple;
+            color:ghostwhite;
+            padding-left: 450px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            margin-bottom: 10px;
+            margin-right: 10px;
+            margin-bottom: 50px;
+            margin-top: 0px;
+            border-radius: 10px;
+            font-size: xx-large;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-style: normal;
+            border-style:inset;
+        }
+        .btn{
+            border-radius: 4px;
+            margin-left: 400px;
+            margin-bottom: 20px;
+        
+        }
+        .btn:hover{
+            background-color:magenta;
+            scale: 1.25;
+
+        }
+        .btn-call{
+            border-radius: 4px;
+            margin-left: 100px;
+            margin-bottom: 20px;
+          
+        }
+        .btn-call:active{
+            background-color:darkviolet;
+            border-radius: 10px;
+        }
+        .username{
+            border-radius: 4px;
+            margin-left: 100px;
+            margin-bottom: 20px;
+        }
+        .username:focus{
+            background-color:violet;
+            color:maroon;
+        }
+        .title{
+            color:purple;
+            font-style: italic;
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+        .title::after{
+            content: "Mansoor";
+        }
+        .title::before{
+            content:"Syeda";
+        }
+        .container{
+            width:200px;
+            height:200px;
+            background-color:darkmagenta;
+            border-radius: 5px;
+            margin-left: 530px;
+            margin-top: 30px;
+            border-radius: 20px;
+            border-style: double;
+        }
+        .container:hover{
+        background-color: mediumorchid;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="heading">Pseudo Classes Elements</h1>
+    <button class="btn">Enroll Now</button>
+    <button class="btn-call">Call Now</button> 
+    <input type="text" class="username">
+    <!--Pseudo Element-->
+    <h1 class="title">Khadija</h1>
+
+     <div class="container"></div>
+</body>
+</html>
